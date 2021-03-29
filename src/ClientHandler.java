@@ -33,7 +33,7 @@ public class ClientHandler implements Runnable{
                     broadcast(request.substring(firstSpace + 1));
                 }
 
-                if (request == null) {
+                if (request.equals("") || request.equals(" ")) {
                     out.println("Skriv noe ordentlig din penis");
                 }
 
