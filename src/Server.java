@@ -3,6 +3,7 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -36,7 +37,7 @@ public class Server {
             int clientPort = client.getPort();
 
             //Printing names and portnumbers:
-            System.out.println("[SERVER] " + hName + " " + hostName + " " + clientPort + " connected to server");
+            System.out.println("[SERVER] " + hName + " " + Arrays.toString(hostName) + " " + clientPort + " connected to server");
 
 
             //Welcomes new connections  to the server
